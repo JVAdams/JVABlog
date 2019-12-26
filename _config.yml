@@ -1,1 +1,11 @@
+title: JVABlog
+description: >- # this means to ignore newlines until "email:"
+  "This blog was created following 'Blogging with R' slides by Bernardo D'Auria"
+email: buai.biz@gmail.com
+
+# Build settings
+markdown: kramdown
+exclude: ['*.Rmd'] # this is important to use with RMarkdown
 theme: jekyll-theme-minimal
+plugins:
+  - jekyll-feed # to serve posts
