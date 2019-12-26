@@ -1,0 +1,14 @@
+---
+layout: home
+title: "Welcome to my Blog"
+---
+
+```{r, echo=FALSE}
+library(ggplot2)
+
+## Plot
+g <- ggplot(mpg, aes(cty))
+g + geom_density(aes(fill=factor(cyl)), alpha=0.8) + 
+    labs(title="Density plot", caption="Source: mpg", 
+         x="City Mileage", fill="# Cylinders")
+```
